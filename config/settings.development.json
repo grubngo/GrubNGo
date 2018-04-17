@@ -12,12 +12,9 @@
   ],
   "defaultContacts": [
     {
-      "firstName": "Philip",
-      "lastName": "Johnson",
-      "address": "POST 307, University of Hawaii",
-      "image": "https://philipmjohnson.github.io/images/philip2.jpeg",
-      "owner": "john@foo.com",
-      "description": "I am a Professor of Information and Computer Sciences at the University of Hawaii, Director of the Collaborative Software Development Laboratory, and the CEO of OpenPowerQuality.com."
+      "menu": "food",
+      "item": "steak",
+      "image": "https://avatars0.githubusercontent.com/u/7494478?s=460&v=4"
     },
     {
       "firstName": "Henri",
