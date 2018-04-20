@@ -11,11 +11,7 @@
     }
   ],
   "defaultContacts": [
-    {
-      "menu": "food",
-      "item": "steak",
-      "image": "https://avatars0.githubusercontent.com/u/7494478?s=460&v=4"
-    },
+
     {
       "firstName": "Henri",
       "lastName": "Casanova",
@@ -31,6 +27,14 @@
       "image": "https://pbs.twimg.com/profile_images/798636728852434944/Y2EMD2i5_400x400.jpg",
       "owner": "admin@foo.com",
       "description": "Kim Binsted received her BSc in Physics at McGill (1991), and her PhD in Artificial Intelligence from the University of Edinburgh (1996). Her thesis topic was the computational modeling and generation of punning riddles, and her program, JAPE (Joke Analysis and Production Engine), generated puns such as 'What do you call a Martian who drinks beer? An ale-ien!'"
+    }
+  ],
+
+  "defaultVendors": [
+    {
+      "food": "food",
+      "drinks": "steak",
+      "image": "https://avatars0.githubusercontent.com/u/7494478?s=460&v=4"
     }
   ]
 }
