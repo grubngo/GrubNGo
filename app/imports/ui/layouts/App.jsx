@@ -30,7 +30,7 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <ProtectedRoute path="/list" component={ListContacts}/>
-              <ProtectedRoute path="/vendorH" component={ListStuffVendor}/>
+              <ProtectedRoute path="/" component={ListStuffVendor}/>
               <ProtectedRoute path="/add" component={AddContact}/>
               <ProtectedRoute path="/edit/:_id" component={EditContact}/>
               <AdminProtectedRoute path="/admin" component={ListContactsAdmin}/>
