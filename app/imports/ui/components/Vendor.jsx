@@ -15,6 +15,9 @@ class Vendor extends React.Component {
             <Card.Header>
               {this.props.vendor.food}
             </Card.Header>
+            <Card.Header>
+              {this.props.vendor.drinks}
+            </Card.Header>
           </Card.Content>
           <Card.Content extra>
             <Link to={`/edit/${this.props.vendor._id}`}>Edit</Link>
