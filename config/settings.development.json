@@ -10,6 +10,7 @@
       "password": "changeme"
     }
   ],
+
   "defaultContacts": [
     {
       "firstName": "Philip",
@@ -34,6 +35,37 @@
       "image": "https://pbs.twimg.com/profile_images/798636728852434944/Y2EMD2i5_400x400.jpg",
       "owner": "admin@foo.com",
       "description": "Kim Binsted received her BSc in Physics at McGill (1991), and her PhD in Artificial Intelligence from the University of Edinburgh (1996). Her thesis topic was the computational modeling and generation of punning riddles, and her program, JAPE (Joke Analysis and Production Engine), generated puns such as 'What do you call a Martian who drinks beer? An ale-ien!'"
+    }
+  ],
+
+  "eateriesListed": [
+    {
+      "vendorName": "DaSpot",
+      "image": "insert",
+      "location": "Sustainability Garden",
+      "category": "Mediterranean",
+      "description": "DaSpot offers a wide variety of healthy options. Their current goals are to educate sustainability and advocate healthy eating practices."
+    },
+    {
+      "vendorName": "Domino's",
+      "image": "insert",
+      "location": "Paradise Palms",
+      "category": "Pizza",
+      "description": "Domino's serve delicious hot personal pizzas alongside wings and pasta."
+    },
+    {
+      "vendorName": "StirFresh",
+      "image": "insert",
+      "location": "Near Campus Center on the first floor",
+      "category": "Mix",
+      "description": "You can select fresh vegetables from their vegetable bar for them to stir cook for you."
+    },
+    {
+      "vendorName": "SaladBar",
+      "image": "insert",
+      "location": "Campus Center",
+      "category": "Salad",
+      "description": "The Salad Bar contains a wide range of options to create your own salad. Or if you're in a hurry, they have pre-made selections available!"
     }
   ]
 }
