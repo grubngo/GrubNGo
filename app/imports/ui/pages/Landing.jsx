@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Icon, Header } from 'semantic-ui-react';
+import { Maps } from '/imports/ui/components/maps';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
