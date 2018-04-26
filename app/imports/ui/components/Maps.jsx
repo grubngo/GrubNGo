@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
+
+const MapComponent = withScriptjs(withGoogleMap((props) =>
+    <GoogleMap
+      defaultZoom={8}
+      defaultCenter={{ lat: -34, lng: 150 }}
+    >
+      {props.isMarkerShown && <Marker position={{lat: -34, lng: 150 }} />}
+    </GoogleMap>
+))
+
+<MapComponent isMarkerShown />
+
+
+
+/*
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Maps extends Component {
@@ -33,6 +49,7 @@ class Maps extends Component {
 }
 
 export default Maps;
+*/
 
 /*
 API Key: AIzaSyDohsA6g7_IT6eTvTuISQFG0vt_KZpRuyE
