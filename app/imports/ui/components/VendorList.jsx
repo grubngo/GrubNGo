@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Card } from 'semantic-ui-react';
-import { Contacts } from '/imports/api/contact/contact';
+import { Vendor } from '/imports/api/vendor/vendor';
 import { Notes } from '/imports/api/note/note';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import Contact from '/imports/ui/components/Contact';
+import Vendor from '/imports/ui/components/Vendor';
 
 /** Renders a table containing all of the contact documents. Use <contactItem> to render each row. */
 class VendorList extends React.Component {
@@ -19,12 +19,12 @@ class VendorList extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center" inverted>List Contacts</Header>
+          <Header as="h2" textAlign="center" inverted>List Vendors</Header>
           <Card.Group>
-            {this.props.contacts.map((contact, index) =>
-                <Contact key={index}
-                         contact={contact}
-                         notes={this.props.notes.filter(note => (note.contactId === contact._id))}/>)}
+            {this.props.vendors.map((contact, index) =>
+                <Vendor key={index}
+                         vendor={vendor}
+                         notes={this.props.notes.filter(note => (note.vendorId === vendor._id))}/>)}
           </Card.Group>
         </Container>
     );
@@ -33,7 +33,7 @@ class VendorList extends React.Component {
 
 /** Require an array of contact documents in the props. */
 VendorList.propTypes = {
-  contacts: PropTypes.array.isRequired,
+  vendors: PropTypes.array.isRequired,
   notes: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -41,10 +41,10 @@ VendorList.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Contacts');
+  const subscription = Meteor.subscribe('Vendors');
   const subscription2 = Meteor.subscribe('Notes');
   return {
-    contacts: Contacts.find({}).fetch(),
+    vendors: Vendors.find({}).fetch(),
     notes: Notes.find({}).fetch(),
     ready: subscription.ready() && subscription2.ready(),
   };
