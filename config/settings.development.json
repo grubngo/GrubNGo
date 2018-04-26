@@ -10,6 +10,7 @@
       "password": "changeme"
     }
   ],
+
   "defaultContacts": [
     {
       "firstName": "Philip",
@@ -29,11 +30,28 @@
     },
     {
       "firstName": "Kim",
-      "lastName": "Binsted",
       "address": "POST 307, University of Hawaii",
       "image": "https://pbs.twimg.com/profile_images/798636728852434944/Y2EMD2i5_400x400.jpg",
       "owner": "admin@foo.com",
       "description": "Kim Binsted received her BSc in Physics at McGill (1991), and her PhD in Artificial Intelligence from the University of Edinburgh (1996). Her thesis topic was the computational modeling and generation of punning riddles, and her program, JAPE (Joke Analysis and Production Engine), generated puns such as 'What do you call a Martian who drinks beer? An ale-ien!'"
+    }
+  ],
+
+  "defaultVendors": [
+    {
+      "Name": "Vendors",
+      "type": "Food",
+      "image": "http://www.subway.com/~/media/base_english/images/branding/subway_logo_og.png",
+      "description": "filler",
+      "owner": "john@foo.com"
+
+    },
+    {
+      "Name": "Vendors",
+      "type": "Drinks",
+      "image": "http://deraspringfield.com/wp-content/uploads/2017/07/1497518141_Assorted-Soft-Drinks-banner-1-600x350.jpg",
+      "description": "filler",
+      "owner": "john@foo.com"
     }
   ]
 }
