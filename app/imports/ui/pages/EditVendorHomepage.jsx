@@ -18,7 +18,7 @@ class EditVendor extends React.Component {
   /** On successful submit, insert the data. */
   submit(data) {
     const { firstName, lastName, address, image, description, _id } = data;
-    Contacts.update(_id, { $set: { firstName, lastName, address, image, description } }, (error) => (error ?
+    Vendors.update(_id, { $set: { firstName, lastName, address, image, description } }, (error) => (error ?
         Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
         Bert.alert({ type: 'success', message: 'Update succeeded' })));
   }
@@ -33,12 +33,11 @@ class EditVendor extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center" inverted>Edit Contact</Header>
-            <AutoForm schema={ContactSchema} onSubmit={this.submit} model={this.props.doc}>
+            <Header as="h2" textAlign="center" inverted>Edit Vendor</Header>
+            <AutoForm schema={VendorSchema} onSubmit={this.submit} model={this.props.doc}>
               <Segment>
-                <TextField name='firstName'/>
-                <TextField name='lastName'/>
-                <TextField name='address'/>
+                <TextField name='Name'/>
+                <TextField name='type'/>
                 <TextField name='image'/>
                 <LongTextField name='description'/>
                 <SubmitField value='Submit'/>
@@ -52,7 +51,7 @@ class EditVendor extends React.Component {
   }
 }
 
-/** Require the presence of a Contact document in the props object. Uniforms adds 'model' to the props, which we use. */
+/** Require the presence of a Vendor document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditVendor.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
@@ -63,10 +62,10 @@ EditVendor.propTypes = {
 export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
-  // Get access to Contacts documents.
-  const subscription = Meteor.subscribe('Contacts');
+  // Get access to Vendors documents.
+  const subscription = Meteor.subscribe('Vendors');
   return {
-    doc: Contacts.findOne(documentId),
+    doc: Vendors.findOne(documentId),
     ready: subscription.ready(),
   };
 })(EditVendor);
