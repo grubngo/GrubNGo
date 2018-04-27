@@ -30,10 +30,9 @@ class Landing extends React.Component {
                 categories.</Header>
             </Grid.Column>
           </Grid>
-            <Container>
-          <Embed
-              url="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d5257.194777602245!2d-157.8200138283992!3d21.29528126714656!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1524794176413"/>
-            </Container>
+          <Container align='center'>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1z9qHzKI8oEIKgsKoIA4vdEW3TU9lJUyQ" width="1040" height="680"></iframe>
+          </Container>
         </div>
     );
   }
