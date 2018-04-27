@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Icon, Header } from 'semantic-ui-react';
+import { Grid, Icon, Header, Embed, Container } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -25,11 +25,14 @@ class Landing extends React.Component {
 
             <Grid.Column textAlign='center'>
               <Icon size='huge' inverted name='search'/>
-              <Header as='h1' inverted>Browse Food Categories</Header>
+              <Header as='h1' inverted>Browse Food</Header>
               <Header as='h3' inverted>Craving Sushi, Pho, Pizza, or want to try something new? Search by food
                 categories.</Header>
             </Grid.Column>
           </Grid>
+          <Container align='center'>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1z9qHzKI8oEIKgsKoIA4vdEW3TU9lJUyQ" width="1040" height="680"></iframe>
+          </Container>
         </div>
     );
   }
