@@ -6,6 +6,11 @@
       "role": "admin"
     },
     {
+      "email": "vendor@foo.com",
+      "password": "changeme",
+      "role": "vendor"
+    },
+    {
       "email": "john@foo.com",
       "password": "changeme"
     }
@@ -43,7 +48,7 @@
       "type": "Food",
       "image": "http://www.subway.com/~/media/base_english/images/branding/subway_logo_og.png",
       "description": "filler",
-      "owner": "john@foo.com"
+      "owner": "vendor@foo.com"
 
     },
     {
@@ -51,7 +56,7 @@
       "type": "Drinks",
       "image": "http://deraspringfield.com/wp-content/uploads/2017/07/1497518141_Assorted-Soft-Drinks-banner-1-600x350.jpg",
       "description": "filler",
-      "owner": "john@foo.com"
+      "owner": "vendor@foo.com"
     }
   ]
 }
