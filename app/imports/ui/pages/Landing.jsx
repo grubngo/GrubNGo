@@ -7,7 +7,9 @@ class Landing extends React.Component {
     return (
         <div className='back-image'>
           <div className ='mapContainer' align="center">
+            <Header as='h1' inverted>Find your GRUB!!!</Header>
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1z9qHzKI8oEIKgsKoIA4vdEW3TU9lJUyQ" width="1040" height="680"></iframe>
+            <Header as='h1' inverted>Where to GO!!!</Header>
             <a class="twitter-timeline" data-height="500" data-width="1040"  href="https://twitter.com/GoGrubn/lists/feed?ref_src=twsrc%5Etfw"></a>
           </div>
         </div>
