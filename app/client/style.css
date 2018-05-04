@@ -4,3 +4,6 @@
   background-size: cover;
   min-height: 375px;
 }
+.mapContainer {
+  padding: 50px;
+}
