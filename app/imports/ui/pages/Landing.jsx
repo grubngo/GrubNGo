@@ -11,14 +11,14 @@ class Landing extends React.Component {
           <Grid container stackable columns={2}>
             <Grid.Column inverted>
               <Header as='h1' inverted>Live updates from restaurants at UH Manoa!</Header>
-              <a className='twitter-timeline' data-height='680' data-width='300'
+              <a className='twitter-timeline' data-height='680' data-width='300' data-alignment="left"
                  href="https://twitter.com/GoGrubn/lists/feed?ref_src=twsrc%5Etfw"></a>
             </Grid.Column>
 
             <Grid.Column inverted>
               <Header as='h1' inverted>Hungry at UH Manoa? Use the map below to getchyo GRUB on!</Header>
               <iframe
-                  width="1040"
+                  width="700"
                   height="680"
                   src="https://www.google.com/maps/d/u/0/embed?mid=1z9qHzKI8oEIKgsKoIA4vdEW3TU9lJUyQ">
               </iframe>
